@@ -7,6 +7,17 @@ const exchangeIcon = document.querySelector("form .icon");
 const imgfrom = document.querySelector("#imgFrom");
 const imgTO = document.querySelector("#imgTO");
 
+$("form").submit(function(e){
+  e.preventDefault();
+});
+
+$("#amount").keyup(function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+      $("#myBtn").click();
+  }
+});
+
 exchangeIcon.addEventListener("click",()=>{
  let tmp = fromCurrency.value;
 fromCurrency.value = toCurrency.value ; 
