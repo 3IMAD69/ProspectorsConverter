@@ -63,7 +63,6 @@ document.getElementById("myBtn").addEventListener("click", function() {
 });
 
 
-//need to to combine dis 2 later but m too lazy or stupid who knows 
 function LoadImg(Currency,img){
     switch(Currency.value){
         case 'usd': img.src = 'img/us.png'
@@ -130,9 +129,6 @@ function UsdToGold(usd,callback){
    })
 }
 
-// UsdToGold(20,(gg)=>{
-//   console.log(gg);
-// })
  
 
 
@@ -148,9 +144,6 @@ function UsdToWax(usd,callback){
   .catch(error => console.log(error))
 }
 
-// UsdToWax(20,(usdwax)=>{
-//  console.log(usdwax)
-// });
 
 
 function GoldToWax(gold,callback){
@@ -169,9 +162,6 @@ function GoldToWax(gold,callback){
   .catch(error => console.log(error))
 }
 
-// GoldToWax(20000,(goldwax)=>{  khdama 
-//     console.log(goldwax);
-// })
 
 
 
@@ -189,9 +179,6 @@ function WaxtoGold(MyWax,callback){
   .catch(error => console.log(error))
 }
 
-// WaxtoGold(20,(MyWax)=>{
-//   console.log(MyWax)
-// })
 
 function WaxToUsd(MyWax,callback){
   fetch("https://api.coingecko.com/api/v3/simple/price?ids=wax&vs_currencies=usd")
@@ -205,8 +192,4 @@ function WaxToUsd(MyWax,callback){
   })
   .catch(error => console.log(error))
 }
-
-// WaxToUsd(20,(test)=>{
-// console.log(test);
-// })
 
